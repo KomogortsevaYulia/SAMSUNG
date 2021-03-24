@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task_2_4</string>
+    <string name="equation">A*x*x+B*x+C=0</string>
+    <string name="a">А=</string>
+    <string name="b">B=</string>
+    <string name="c">С=</string>
+    <string name="calculate">Вычислить</string>
+</resources>
