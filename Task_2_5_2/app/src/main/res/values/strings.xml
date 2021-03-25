@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task_2_5_2</string>
+    <string name="Input">Вход</string>
+    <string name="Login">Логин</string>
+    <string name="Password">Пароль</string>
+    <string name="True" >Верно</string>
+    <string name="False" >Вы ошиблись в логине или пароле</string>
+</resources>
