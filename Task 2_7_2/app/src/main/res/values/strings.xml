@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task 2_7_2</string>
+    <string name="x" />
+    <string name="y" />
+    <string name="z" />
+    <string name="True">Логин и пароль верные</string>
+    <string name="False">Логин и пароль введены неверно</string>
+</resources>
