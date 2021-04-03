@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,21 +37,27 @@ public class MainActivity extends AppCompatActivity {
         Input.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for (String[] a:list) {
-                    if (String.valueOf(Login.getText()).equals(a[0]) & String.valueOf(Password.getText()).equals(a[1]) ){
-                        text.setText(R.string.True);
-                        text.setTextColor(Color.GREEN);
-                        r=true;
-                        return;
-                    }else {
-                        r=false;
+
+                if (!Login.getText().toString().equals("") && !Password.getText().toString().equals("")) {
+                    for (String[] a:list) {
+                        if (String.valueOf(Login.getText()).equals(a[0]) & String.valueOf(Password.getText()).equals(a[1]) ){
+                            text.setText(R.string.True);
+                            text.setTextColor(Color.GREEN);
+                            r=true;
+                            return;
+                        }else {
+                            r=false;
+                        }
+                    }
+                    if (!r){
+                        Context context=MainActivity.this;
+                        Class anyActivity=MainActivity2.class;
+                        Intent anyActiviy=new Intent(context,anyActivity);
+                        startActivityForResult(anyActiviy,1);
                     }
                 }
-                if (!r){
-                    Context context=MainActivity.this;
-                    Class anyActivity=MainActivity2.class;
-                    Intent anyActiviy=new Intent(context,anyActivity);
-                    startActivityForResult(anyActiviy,1);
+                else {
+                    Toast.makeText(getApplicationContext(), "Вы ничего не ввели", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -61,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         Bundle arguments = getIntent().getExtras();
         switch (resultCode) {
             case RESULT_OK:
-                Login.setText(data.getStringExtra("loginValue"));
-                String log = data.getStringExtra("Log");
-                String pas = data.getStringExtra("Pas");
+                Login.setText(data.getStringExtra("log"));
+                String log = data.getStringExtra("log");
+                String pas = data.getStringExtra("pas");
                 list.add(new String[]{log, pas});
         }
     }

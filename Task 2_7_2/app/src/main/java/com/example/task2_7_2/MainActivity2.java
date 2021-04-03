@@ -28,8 +28,8 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 if (!Login.getText().toString().equals("") && !Password.getText().toString().equals("")) {
                     Intent i = new Intent();
-                    i.putExtra("loginValue", Login.getText().toString());
-                    i.putExtra("passwordValue", Password.getText().toString());
+                    i.putExtra("log", Login.getText().toString());
+                    i.putExtra("pas", Password.getText().toString());
                     setResult(RESULT_OK, i);
                     finish();
                 }
