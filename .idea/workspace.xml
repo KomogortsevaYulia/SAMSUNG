@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="355ca994-10e0-486c-b645-a9c36fb2dc7f" name="Default Changelist" comment="" />
+    <list default="true" id="304ec5ff-efcc-4ed0-be7a-e1362f573628" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Samsung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 2_7_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task 2_7_2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2_5_2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_5_2/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1pFqo4wlnk0QDktCwSn8b4FUcPW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1sqzs7OFYTcD2h9SU1C8SSwrctv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,16 +26,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../AndroidStudio" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="355ca994-10e0-486c-b645-a9c36fb2dc7f" name="Default Changelist" comment="" />
-      <created>1614789363734</created>
+      <changelist id="304ec5ff-efcc-4ed0-be7a-e1362f573628" name="Default Changelist" comment="" />
+      <created>1621615111413</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614789363734</updated>
+      <updated>1621615111413</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="484" y="154" key="FileChooserDialogImpl" timestamp="1621615173277">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="154" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621615173277" />
   </component>
 </project>
