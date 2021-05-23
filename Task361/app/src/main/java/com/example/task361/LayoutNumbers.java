@@ -16,7 +16,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 public class LayoutNumbers extends Fragment implements View.OnClickListener{
-    private double number1, number2;
 
     @Nullable
     @Override
@@ -57,10 +56,6 @@ public class LayoutNumbers extends Fragment implements View.OnClickListener{
         buttonMult.setOnClickListener(this);
         Button buttonPoint = getView().findViewById(R.id.buttonComma);
         buttonPoint.setOnClickListener(this);
-        Button buttonClear = getView().findViewById(R.id.buttonDelete);
-        buttonClear.setOnClickListener(this);
-        Button buttonEqual = getView().findViewById(R.id.buttonEqually);
-        buttonEqual.setOnClickListener(this);
         Button buttonSign = getView().findViewById(R.id.button);
         buttonSign.setOnClickListener(this);
         /*Button buttonRemove = getView().findViewById(R.id.remove);
@@ -68,9 +63,8 @@ public class LayoutNumbers extends Fragment implements View.OnClickListener{
     }
     @Override
     public void onClick(View v) {
-        TextView text = getView().findViewById(R.id.textView2);
+        TextView text = getView().findViewById(R.id.textView3);
         String[] equation;
-
         switch (v.getId()) {
             case R.id.button1:
                 if (text.getText().toString().contains("="))
@@ -137,8 +131,7 @@ public class LayoutNumbers extends Fragment implements View.OnClickListener{
                 if (!text.getText().toString().isEmpty() && !text.getText().toString().contains("=")) {
                     if (equation.length == 1 && equation[0].length() > 0 && !equation[0].contains(".")) {
                         text.append(".");
-                    }
-                    else if (equation.length == 3 && equation[2].length() > 0 && !equation[2].contains(".")) {
+                    } else if (equation.length == 3 && equation[2].length() > 0 && !equation[2].contains(".")) {
                         text.append(".");
                     }
                 }
@@ -149,59 +142,15 @@ public class LayoutNumbers extends Fragment implements View.OnClickListener{
                     if (equation.length == 1 && equation[0].length() > 0) {
                         if (!equation[0].contains("-")) {
                             text.setText("-" + text.getText());
-                        }
-                        else {
+                        } else {
                             text.setText(text.getText().subSequence(1, text.getText().length()));
                         }
-                    }
-                    else if (equation.length == 3 && equation[2].length() > 0) {
+                    } else if (equation.length == 3 && equation[2].length() > 0) {
                         if (!equation[2].contains("-")) {
                             text.setText(equation[0] + " " + equation[1] + " -" + equation[2]);
-                        }
-                        else {
+                        } else {
                             text.setText(equation[0] + " " + equation[1] + " " + equation[2].substring(1));
                         }
-                    }
-                }
-                break;
-            /*case R.id.remove:
-                if (text.getText().toString().isEmpty()) break;
-                if (text.getText().charAt(text.getText().length()-1) != ' ') {
-                    text.setText(text.getText().subSequence(0, text.getText().length() - 1));
-                }
-                else if (text.getText().charAt(text.getText().length()-1) == ' ') {
-                    text.setText(text.getText().subSequence(0, text.getText().length() - 3));
-                }
-                break;*/
-            case R.id.buttonDelete:
-                text.setText("");
-                break;
-            case R.id.buttonEqually:
-                if (!text.getText().toString().isEmpty()) {
-                    equation = text.getText().toString().split(" ");
-                    if (text.getText().toString().charAt(
-                            text.getText().toString().length() - 1) == '.') text.append("0");
-                    try {
-                        number1 = Double.parseDouble(equation[0]);
-                        number2 = Double.parseDouble(equation[2]);
-                        Toast.makeText(getActivity(), equation[1], Toast.LENGTH_SHORT).show();
-
-                        switch (equation[1]) {
-                            case "+":
-                                text.append(" = " + (number1 + number2));
-                                break;
-                            case "-":
-                                text.append(" = " + (number1 - number2));
-                                break;
-                            case "*":
-                                text.append(" = " + (number1 * number2));
-                                break;
-                            case "/":
-                                text.append(" = " + (number1 / number2));
-                                break;
-                        }
-                    } catch (NumberFormatException ex) {
-                        Toast.makeText(getActivity(), ex.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
                 break;

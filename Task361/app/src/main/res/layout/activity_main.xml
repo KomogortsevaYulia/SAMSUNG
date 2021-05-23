@@ -13,52 +13,55 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="356dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="363dp"
-                android:layout_height="69dp"
-                android:textAlignment="center"
-                android:textSize="36sp"
+            <fragment
+                android:id="@+id/fragmentButton"
+                android:name="com.example.task361.LayoutNumbers"
+                android:layout_width="404dp"
+                android:layout_height="457dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="82dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/buttonEqually"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="="
-                android:textColor="@color/black"
-                android:textSize="36sp"
-                app:backgroundTint="@color/white" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.306"
+                tools:layout="@layout/layoutnumbers" />
 
             <Button
                 android:id="@+id/buttonDelete"
-                android:layout_width="wrap_content"
-                android:layout_height="82dp"
+                android:layout_width="196dp"
+                android:layout_height="173dp"
                 android:layout_weight="1"
                 android:autoText="false"
                 android:text="С"
                 android:textColor="@color/black"
                 android:textSize="36sp"
-                app:backgroundTint="@color/white" />
-        </LinearLayout>
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
-        <fragment
-            android:id="@+id/fragmentButton"
-            android:name="com.example.task361.LayoutNumbers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/layoutnumbers" />
+            <Button
+                android:id="@+id/buttonEqually"
+                android:layout_width="200dp"
+                android:layout_height="173dp"
+                android:layout_weight="1"
+                android:text="="
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
